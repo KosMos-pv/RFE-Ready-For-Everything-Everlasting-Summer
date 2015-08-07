@@ -3,7 +3,7 @@ init:
     image bg uni = "uni.jpg"
     $ pav = Character(u'Павел', color="#380")
     $ mav = Character(u'Мать', color="480")
-    image bg gym = "bg/gym.png"
+    image bg gym = "mods/bg/gym.jpg"
 label rfe_prologue:
     play ambience ambience_medium_crowd_indoors_1 fadein 0
     window hide
