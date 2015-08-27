@@ -1,5 +1,5 @@
 init:
-    $ mods["rfe_prologue"] = u"Готов ко всему. Final Beta"
+    $ mods["rfe_prologue"] = u"Готов ко всему. Github ver."
 label rfe_prologue:
     play ambience ambience_camp_entrance_day fadein 1
     window hide
@@ -1978,8 +1978,8 @@ label rfe_part8:
     "***"
     scene int_library_day with dissolve
     play music music_list["pile"] fadein 3
-    show dv surprise pioneer at center with dspr
-    show un cry pioneer at left with dspr
+    show dv surprise pioneer far at center with dspr
+    show un cry pioneer far at left with dspr
     show pi far at cright with dspr
     un "Не открывается!"
     "Отчаянно вскрикнула она и, вытащив нож, встала рядом с Алисой."
@@ -1987,19 +1987,19 @@ label rfe_part8:
     "Скабрезно ухмыльнулся пионер–убийца."
     pim "Вы в кле–{w}точ–{w}ке!"
     "Алиса метнула затравленный взгляд на ближайшее окно."
-    show dv scared pioneer at center with dspr
+    show dv scared pioneer far at center with dspr
     pim "Но–но–но–но!"
-    show dv surprise pioneer at center with dspr
+    show dv surprise pioneer far at center with dspr
     "Осуждающе покачал пионер пальцем."
     pim "Не успеешь ты выпрыгнуть. {w}И, вообще, неужели ты оставишь тут Леночку? {w}Одну? {w}Со мной, хе–хе? {w}Фу какая!"
-    show un scared pioneer at cleft with dspr
+    show un scared pioneer far at cleft with dspr
     th "Тварь! Как он к нам подкрался? Мы же по всем сторонам смотрели!"
     "Панически подумала Алиса, лихорадочно перебирая варианты побега."
     pim "Ну–сс…"
     "Сказал маньяк и ловко крутанул колун в руках."
     pim "Приступим, пожалуй. Давайте, птички мои, развлеките меня, посопротивляйтесь подольше. {w}А то у меня последние дни о–о–очень плохое настроение. {w}Причем, как ни парадоксально, именно благодаря “себе”."
     "Хищно оскалившись, он поудобней перехватил топор и двинулся вперед. Рыжволосая рокерша подняла стул выше и закричала:"
-    show dv rage pioneer close at center with dspr
+    show dv rage pioneer far at center with dspr
     dv "Уйди, урод!!! Прочь!!!"
     show pi far at center with dspr
     pim "Вот прямо счас, все брошу и уйду!"
@@ -2276,8 +2276,8 @@ label end_text_rfe:
     pause(1)
     show credits end_text_rfe:
         xalign 0.5 
-        ypos 1.3 
-        linear 67.0 ypos –1.3 
+        ypos 1.3
+        linear 67.0 ypos -1.3
     $ renpy.pause(67, hard=True)
     scene black
     with dissolve2
