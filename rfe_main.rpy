@@ -1826,7 +1826,7 @@ label rfe_part8:
     show pi normal_rfe at center with dspr
     pi "Ой, Сема! {w}Отвянь, я сегодня объявил себе выходной, так что…"
     me "Там был мой двойник."
-    show pi suprise_rfe at center with dspr
+    show pi surprise_rfe at center with dspr
     pi "Опп–па!"
     "Пионер сел и аккуратно поставил бокал на стоящую рядом табуретку."
     show pi serious_rfe at center with dspr
@@ -2003,7 +2003,7 @@ label rfe_part8:
     "Хищно оскалившись, он поудобней перехватил топор и двинулся вперед. Рыжволосая рокерша подняла стул выше и закричала:"
     show dv rage pioneer far at center with dspr
     dv "Уйди, урод!!! Прочь!!!"
-    show pi upset_rfe at center with dspr
+    show pi upset_rfe far at center with dspr
     pim "Вот прямо счас, все брошу и уйду!"
     "Мерзко хихикнул убийца."
     play sound sfx_punch_medium
@@ -2012,10 +2012,10 @@ label rfe_part8:
     show dv sad pioneer far at center with dspr
     play sound sfx_bodyfall_1
     "Охнув от боли, рыжая выронила стул и упала на пол."
-    show pi smile_rfe at center with dspr
+    show pi smile_rfe far at center with dspr
     pim "Одна есть!"
     hide dv with dspr
-    show pi smile_rfe at left with dspr
+    show pi smile_rfe far at left with dspr
     "В злобной радости заорал пионер, легко перехватывая руку бросившейся на него с ножом Лену."
     play sound "sound/knifest2.mp3"
     "Сжав тонкое девичье запястье, он развернул освободившийся топор обухом и и ударил девушку в плечо. Та вскрикнула и нож выскользнул из пальцев. "
@@ -2289,6 +2289,6 @@ label end_text_rfe:
     menu:
         "Оригинальный сценарий (не готово)":
             return
-        "Сценарий кодера":
-            jump fsociety
+        "Сценарий кодера (не готово, но делается)":
+            return
 return
