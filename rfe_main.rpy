@@ -2290,5 +2290,5 @@ label end_text_rfe:
         "Оригинальный сценарий (не готово)":
             return
         "Сценарий кодера (не готово, но делается)":
-            return
+            jump fsociety
 return
