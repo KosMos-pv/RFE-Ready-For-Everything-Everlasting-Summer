@@ -6,13 +6,17 @@ label rfe_prologue:
     scene black
     window show
     play music music_list["into_the_unknown"] fadein 3
+    "Остро наточенный топор, ловя лезвием солнечные блики, взмывает вверх."
     play sound sfx_punch_medium
-    play sound sfx_punch_washstand
-    "Остро наточенный топор, ловя лезвием солнечные блики, взмывает вверх. {w}Удар. {w}Еще удар. {w}Желтая щепа от здоровенного бревна, вкопанного вертикально в землю, брызгами разлетается в стороны."
+    extend " Удар."
+    play sound2 sfx_punch_washstand
+    extend " Еще удар. {w}Желтая щепа от здоровенного бревна, вкопанного вертикально в землю, брызгами разлетается в стороны."
     play sound sfx_punch_medium
-    play sound sfx_punch_washstand
+    "Прямой удар."
+    play sound2 sfx_punch_washstand
+    extend " Боковой."
     play sound sfx_punch_medium
-    "Прямой удар.{w} Боковой. {w}Удар обухом снизу. {w}Смещение в сторону, уход от предполагаемой атаки и сразу же быстрая ответная серия."
+    extend " Удар обухом снизу. {w}Смещение в сторону, уход от предполагаемой атаки и сразу же быстрая ответная серия."
     play sound sfx_hell_alarm_clock
     scene bg gym
     with dissolve
