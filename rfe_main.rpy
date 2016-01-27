@@ -1,10 +1,11 @@
 init:
-    $ mods["rfe_prologue"] = u"Готов ко всему. Github ver. v2. Мику."
+    $ mods["rfe_menu"] = u"Готов ко всему. Github ver. v2. Мику."
+label rfe_menu:
     menu:
         "С начала":
             jump rfe_prologue
         "Новая глава (Мику)":
-            jump fsociety
+            jump rfe_miku_prologue
 label rfe_prologue:
     $ day_time()
     $ persistent.sprite_time = "day"
@@ -2393,7 +2394,7 @@ label end_text_rfe:
     scene black
     with dissolve2
     "Автор оригинального фанфика – BivnjatkO. Модоадаптация, вычитка, отсебятина, фоны и исправление оригинального текста – tlsd (Lilly On The Bible). Что будет дальше? Зависит от твоего выбора."
-    jump rfe_miku_prologue:
+    jump rfe_miku_prologue
 label rfe_miku_prologue:
     "      Красная Площадь. Почти полдень выходного дня. Кучки семенящих за гидами туристов, словно утята за мамой, восхищенно щелкают во все стороны своими агрегатами для съемки. Коренные москвичи, не обращая внимания на эти островки иностранщины, спешат куда-то по своим делам. В общем, жизнь кипит…
 
