@@ -25,6 +25,7 @@ init 2:
     image bg sigroad = "bg/higroad.jpg"
     image bg bus_rfe = "bg/bus.jpg"
     image bg kremlin_rfe = "bg/kremlin.jpg"
+    image bg nightroof_rfe = "bg/nightjaproof.jpg"
     image dv smile coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_smile.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv normal coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_normal.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv surprise coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_1_body.png",(0,0), "sprites/dv_1_coattie.png",(0,0), "images/sprites/normal/dv/dv_1_surprise.png"), im.matrix.tint(0.83, 0.88, 0.92) )
