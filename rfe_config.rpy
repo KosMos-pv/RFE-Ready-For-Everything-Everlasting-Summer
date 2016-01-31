@@ -2,14 +2,15 @@ init:
     $ end_text_rfe = "IIchan Eroge Team\nи Lilly On The Bible\nблагодарят вас за время, уделённое игре и моду!\n\nБлагодарности:\n\nPyTom'у за движок Ren'Py.\n\nСергею «SilentOwl» Ейбогу\nза предоставленный саундтрек.\n\nГруппе «Nobody.One» за\nпредоставленый саундтрек к моду.\n\nАлексею «Mio Akiyama»\nза помощь с кодом мода.\n\nОгромное спасибо Семёну «Мику» за помощь с Двачевской и поиском фонов.\n\nСпасибо Александру «PRO100_Sasha» за помощь с вычиткой.\n\nСайту freesounds.org\nза бесплатные звуки.\n\nСайтам iichan.hk и 2ch.hk.\n\nВсем, кто помогал работать над модом (ilyamodder, H8R и другие)\n\nВсем, кто поддерживал нас, ждал и верил!\n\nАвторы мода:\n\nBivnjatkO - сценарий.\n\ntlsd (Lilly On The Bible) - код, фоны, звуки, вычитка, отсебятина.\n\n\n\n\n\n\n\nКОНЕЦ.\n"
 
 init 2:
-    $ pav = Character(u'Павел', color="#FF0066", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ mav = Character(u'Мать', color="#99CCFF", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ bab = Character(u'Зоя Фёдоровна', color="#3366CC", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ lis = Character(u'Лысый', color="#FFFF66", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ yar = Character(u'Ярик', color="#FF0033", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ bat = Character(u'Игнат Борисович', color="#06DCFB", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ pim = Character(u'Пионер Маньяк', color="#FF2626", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
-    $ prap = Character(u'Прапор', color="#40FF00", what_color="E2C778", drop_shadow = [ (-1, -1), (1, -1), (-1, 1), (1, 1) ], drop_shadow_color = "#000")
+    $ pav = Character(u'Павел', color="#FF0066", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ mav = Character(u'Мать', color="#99CCFF", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ bab = Character(u'Зоя Фёдоровна', color="#3366CC", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ lis = Character(u'Лысый', color="#FFFF66", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ yar = Character(u'Ярик', color="#FF0033", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ bat = Character(u'Игнат Борисович', color="#06DCFB", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ pim = Character(u'Пионер Маньяк', color="#FF2626", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ prap = Character(u'Прапор', color="#40FF00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ aki = Character(u'Акира', color = "#0033FF", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     image bg gym = "bg/gym.jpg"
     image bg gym2 = "bg/gym2.jpg"
     image bg gym3 = "bg/gym3.jpg"
