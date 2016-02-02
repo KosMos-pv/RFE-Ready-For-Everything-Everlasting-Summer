@@ -144,3 +144,12 @@ init 2:
     image pi upset_rfe shirt = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/normal/pi/pi_2_shirt.png", (0, 0), "sprites/normal/pi/pi_2_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/normal/pi/pi_2_shirt.png", (0, 0), "sprites/normal/pi/pi_2_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/normal/pi/pi_2_shirt.png", (0, 0), "sprites/normal/pi/pi_2_upset.png"))
     image pi upset_rfe shirt far = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/far/pi/pi_2_shirt.png", (0, 0), "sprites/far/pi/pi_2_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/far/pi/pi_2_shirt.png", (0, 0), "sprites/far/pi/pi_2_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/far/pi/pi_2_shirt.png", (0, 0), "sprites/far/pi/pi_2_upset.png"))
     image pi upset_rfe shirt close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_shirt.png", (0, 0), "sprites/close/pi/pi_2_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_shirt.png", (0, 0), "sprites/close/pi/pi_2_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_shirt.png", (0, 0), "sprites/close/pi/pi_2_upset.png"))
+    
+    #aki
+    # сознательный говнокод говнокодом не считается
+    image aki normal = im.Composite((900,1080), (0,0), "sprites/aki/normal.png")
+    image aki laugh = im.Composite((900,1080), (0,0), "sprites/aki/laugh.png")
+    image aki grin = im.Composite((900,1080), (0,0), "sprites/aki/grin.png")
+    image aki angry = im.Composite((900,1080), (0,0), "sprites/aki/angry.png")
+    image aki afraid = im.Composite((900,1080), (0,0), "sprites/aki/afraid.png")
+    #Мику-вокалоид. Взято с разрешения 7дл-куна.
