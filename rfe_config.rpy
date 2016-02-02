@@ -153,3 +153,4 @@ init 2:
     image aki angry = im.Composite((900,1080), (0,0), "sprites/aki/angry.png")
     image aki afraid = im.Composite((900,1080), (0,0), "sprites/aki/afraid.png")
     #Мику-вокалоид. Взято с разрешения 7дл-куна.
+    image mi cry scene_rfe = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((1050, 1080), (0, 0), "images/images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((1050, 1080),  (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((1050, 1080),  (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_cry.png"))
