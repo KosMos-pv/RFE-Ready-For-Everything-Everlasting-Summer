@@ -11,7 +11,7 @@ init 2:
     $ pim = Character(u'Пионер Маньяк', color="#FF2626", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ prap = Character(u'Прапор', color="#40FF00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ aki = Character(u'Акира', color = "#0033FF", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ fil = Character(u'Филин', color = "#907650", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ fil = Character(u'Филин', color = "#8A2BE2", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     image bg gym = "bg/gym.jpg"
     image bg gym2 = "bg/gym2.jpg"
     image bg gym3 = "bg/gym3.jpg"
