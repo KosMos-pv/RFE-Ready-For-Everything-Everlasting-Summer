@@ -2393,7 +2393,7 @@ label end_text_rfe:
     $ renpy.pause(70, hard=True)
     scene black
     with dissolve2
-    "Автор оригинального фанфика – BivnjatkO. Модоадаптация, вычитка, отсебятина, фоны и исправление оригинального текста – tlsd (Lilly On The Bible). 80% работы над следующей частью - Лена."
+    "Автор оригинального фанфика – BivnjatkO. Модоадаптация, вычитка, отсебятина, фоны и исправление оригинального текста – tlsd (Lilly On The Bible). 80 процентов работы над следующей частью - Лена."
     jump rfe_miku_prologue
 label rfe_miku_prologue:
     scene bg kremlin_rfe with dissolve
