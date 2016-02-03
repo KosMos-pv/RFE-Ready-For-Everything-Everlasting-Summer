@@ -1,5 +1,5 @@
 init:
-    $ end_text_rfe = "IIchan Eroge Team\nи Lilly On The Bible\nблагодарят вас за время, уделённое игре и моду!\n\nБлагодарности:\n\nPyTom'у за движок Ren'Py.\n\nСергею «SilentOwl» Ейбогу\nза предоставленный саундтрек.\n\nГруппе «Nobody.One» за\nпредоставленый саундтрек к моду.\n\nАлексею «Mio Akiyama»\nза помощь с кодом мода.\n\nОгромное спасибо Семёну «Мику» за помощь с Двачевской и поиском фонов.\n\nСпасибо Александру «PRO100_Sasha» за помощь с вычиткой.\n\nСайту freesounds.org\nза бесплатные звуки.\n\nСайтам iichan.hk и 2ch.hk.\n\nВсем, кто помогал работать над модом (ilyamodder, H8R и другие)\n\nВсем, кто поддерживал нас, ждал и верил!\n\nАвторы мода:\n\nBivnjatkO - сценарий.\n\ntlsd (Lilly On The Bible) - код, фоны, звуки, вычитка, отсебятина.\n\n\n\n\n\n\n\nКОНЕЦ.\n"
+    $ end_text_rfe = "IIchan Eroge Team\nи Lilly On The Bible\nблагодарят вас за время, уделённое игре и моду!\n\nБлагодарности:\n\nPyTom'у за движок Ren'Py.\n\nСергею «SilentOwl» Ейбогу\nза предоставленный саундтрек.\n\nГруппе «Nobody.One» за\nпредоставленый саундтрек к моду.\n\nЛене\n за огроменную помощь с кодом мода и вычиткой\n\nАлексею «Mio Akiyama»\nза помощь с кодом мода.\n\Cпасибо Семёну «Мику» за помощь с Двачевской и поиском фонов.\n\nСпасибо Александру «PRO100_Sasha» за помощь с вычиткой.\n\n7дл-куну\n за разрешение на коммуниздинг спрайтов Мику\n\nСайту freesounds.org\nза бесплатные звуки.\n\nСайтам iichan.hk и 2ch.hk.\n\nВсем, кто помогал работать над модом (ilyamodder, H8R и другие)\n\nВсем, кто поддерживал нас, ждал и верил!\n\nАвторы мода:\n\nBivnjatkO - сценарий.\n\ntlsd (Lilly On The Bible) - код, фоны, звуки, вычитка, отсебятина.\n\nЛена - внёс огромный вклад в развитие и выход мода вовремя.\n\n\n\n\n\nКОНЕЦ.\n"
 
 init 2:
     $ pav = Character(u'Павел', color="#FF0066", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
@@ -12,6 +12,7 @@ init 2:
     $ prap = Character(u'Прапор', color="#40FF00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ aki = Character(u'Акира', color = "#0033FF", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ fil = Character(u'Филин', color = "#8A2BE2", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    #Все бг / цг фил фри ту юз с указанием хотя бы ссылочки на мод. Всё обрабатывал сам и заняло это достаточно времени. Только, прошу, делайте неконфликтные моды, добавляйте в конец xxx_навзаниемода, так будет проще и мне, и вам.
     image bg gym = "bg/gym.jpg"
     image bg gym2 = "bg/gym2.jpg"
     image bg gym3 = "bg/gym3.jpg"
@@ -40,6 +41,7 @@ init 2:
     image bg clubstreet_rfe = "bg/street.jpg"
     image bg hotelroom1_rfe = "bg/hotelroom1.jpg"
     image bg hotelroom2_rfe = "bg/hotelroom2.jpg"
+    # И спрайты можете забирать с тем же условием. Создавайте новые имена! Не надо использовать coat/coattie. Такая схема подключения работает на 1.2.
     image dv smile coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_smile.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv normal coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_normal.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv surprise coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_1_body.png",(0,0), "sprites/dv_1_coattie.png",(0,0), "images/sprites/normal/dv/dv_1_surprise.png"), im.matrix.tint(0.83, 0.88, 0.92) )
@@ -53,7 +55,7 @@ init 2:
     image dv laugh coattie close = im.MatrixColor( im.Composite((1050,1080), (0,0), "images/sprites/close/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie_close.png",(0,0), "images/sprites/close/dv/dv_4_laugh.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv smile coattie close = im.MatrixColor( im.Composite((1050,1080), (0,0), "images/sprites/close/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie_close.png",(0,0), "images/sprites/close/dv/dv_4_smile.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv surprise coattie close = im.MatrixColor( im.Composite((1050,1080), (0,0), "images/sprites/close/dv/dv_1_body.png",(0,0), "sprites/dv_1_coattie_close.png",(0,0), "images/sprites/close/dv/dv_1_surprise.png"), im.matrix.tint(0.83, 0.88, 0.92) )
-    #Semen/Pioneer
+    #Semen/Pioneer - не помню, откуда взял. Честное слово. Дело было летом, откуда-то взял.
     image pi normal_rfe coat = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/normal/pi/pi_2_coat.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/normal/pi/pi_2_coat.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/normal/pi/pi_2_coat.png"))
     image pi normal_rfe coat far = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/far/pi/pi_2_coat.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/far/pi/pi_2_coat.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/far/pi/pi_2_coat.png"))
     image pi normal_rfe coat close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_coat.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_coat.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_coat.png"))
@@ -151,14 +153,15 @@ init 2:
     image pi upset_rfe shirt close = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_shirt.png", (0, 0), "sprites/close/pi/pi_2_upset.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_shirt.png", (0, 0), "sprites/close/pi/pi_2_upset.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((900, 1080), (0, 0), "sprites/close/pi/pi_2_shirt.png", (0, 0), "sprites/close/pi/pi_2_upset.png"))
     
     #aki
-    # сознательный говнокод говнокодом не считается
+    # сознательный говнокод говнокодом не считается #Можете забирать, спрайт взят с какой-то публичной ветки хентай-модификации. Нарыт лично сценаристом, так что несовпадение с вашим внутренним образом в голове валите на него. (я его представлял вообще другим)
     image aki normal = im.Composite((900,1080), (0,0), "sprites/aki/normal.png")
     image aki laugh = im.Composite((900,1080), (0,0), "sprites/aki/laugh.png")
     image aki grin = im.Composite((900,1080), (0,0), "sprites/aki/grin.png")
     image aki angry = im.Composite((900,1080), (0,0), "sprites/aki/angry.png")
     image aki afraid = im.Composite((900,1080), (0,0), "sprites/aki/afraid.png")
     #Мику-вокалоид. Взято с разрешения 7дл-куна.
-    # And we have a winner. Сколько я мучился с Regex, это просто ужс.
+    # And we have a winner. Сколько я мучился с Regex, это просто ужс. Зато удалил всякие схемы подключения get_sprite_ori или как-то так.
+    # Если будете коммуниздить - прошу, ЗАМЕНИТЕ, внимание, ЗАМЕНИТЕ вот эти scene_rfe на что-нибудь другое (не на voca). И лучше спросите 7дл-куна.
     image mi cry scene_rfe = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((1050, 1080), (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_cry.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((1050, 1080),  (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_cry.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((1050, 1080),  (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_cry.png"))
     image mi dontlike scene_rfe = ConditionSwitch("persistent.sprite_time=='sunset'", im.MatrixColor(im.Composite((1050, 1080), (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_dontlike.png"), im.matrix.tint(0.94, 0.82, 1.0)), "persistent.sprite_time=='night'", im.MatrixColor(im.Composite((1050, 1080),  (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_dontlike.png"), im.matrix.tint(0.63, 0.78, 0.82)), True, im.Composite((1050, 1080),  (0, 0), "images/sprites/normal/mi/mi_1_body.png", (0, 0), "sprites/mi/mi_1_voca_dress.png", (0, 0), "images/sprites/normal/mi/mi_1_dontlike.png"))
     
