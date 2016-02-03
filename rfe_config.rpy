@@ -30,11 +30,16 @@ init 2:
     image bg nightroof_rfe = "bg/nightjaproof.jpg"
     image bg club1_rfe = "bg/club1.jpg"
     image bg club2_rfe = "bg/club2.jpg"
+    image bg club4_rfe = "bg/club4.jpg"
     image bg svech_rfe = "bg/svech_rfe.jpg"
     image bg toiletc_rfe = "bg/toiletc.jpg"
     image cg onthescene_rfe_off = "bg/sceneoff.jpg"
     image cg onthescene_rfe_on = "bg/sceneon.jpg"
     image notdead_rfe = "bg/notdead.png"
+    image bg mikuscreen_rfe = "bg/club3.jpg"
+    image bg clubstreet_rfe = "bg/street.jpg"
+    image bg hotelroom1_rfe = "bg/hotelroom1.jpg"
+    image bg hotelroom2_rfe = "bg/hotelroom2.jpg"
     image dv smile coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_smile.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv normal coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_normal.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv surprise coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_1_body.png",(0,0), "sprites/dv_1_coattie.png",(0,0), "images/sprites/normal/dv/dv_1_surprise.png"), im.matrix.tint(0.83, 0.88, 0.92) )
