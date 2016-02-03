@@ -12,6 +12,7 @@ init 2:
     $ prap = Character(u'Прапор', color="#40FF00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ aki = Character(u'Акира', color = "#0033FF", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ fil = Character(u'Филин', color = "#8A2BE2", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ ydm = Character(u'Девушка в красном', color = "#DC381F", what_color = "#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     #Все бг / цг фил фри ту юз с указанием хотя бы ссылочки на мод. Всё обрабатывал сам и заняло это достаточно времени. Только, прошу, делайте неконфликтные моды, добавляйте в конец xxx_навзаниемода, так будет проще и мне, и вам.
     image bg gym = "bg/gym.jpg"
     image bg gym2 = "bg/gym2.jpg"
