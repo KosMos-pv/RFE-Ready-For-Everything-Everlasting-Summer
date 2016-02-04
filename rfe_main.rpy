@@ -12,7 +12,7 @@ label rfe_prologue:
     $ persistent.sprite_time = "day"
     play ambience ambience_camp_entrance_day fadein 1
     window hide
-    scene black
+    scene black #тест
     window show
     play music music_list["into_the_unknown"] fadein 3
     "Остро наточенный топор, ловя лезвием солнечные блики, взмывает вверх."
@@ -2427,7 +2427,7 @@ label end_text_rfe:
         xalign 0.5 
         ypos 1.3
         linear 67.0 ypos -1.3
-    $ renpy.pause(70, hard=True)
+    $ renpy.pause(78, hard=True)
     scene black
     with dissolve2
     "Автор оригинального фанфика – BivnjatkO. Модоадаптация, вычитка, отсебятина, фоны и исправление оригинального текста – tlsd (Lilly On The Bible). 80 процентов работы над следующей частью - Лена."
