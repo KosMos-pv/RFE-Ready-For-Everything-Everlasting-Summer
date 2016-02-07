@@ -2440,6 +2440,7 @@ label end_text_rfe:
         jump rfe_miku_prologue
 label rfe_miku_prologue:
     $ new_chapter(10, u"Готов на всё. Часть 10")
+    $ persistent.sprite_time = "day"
     scene bg kremlin_rfe with dissolve
     play music "sound/hover.ogg" fadein 2
     window show
