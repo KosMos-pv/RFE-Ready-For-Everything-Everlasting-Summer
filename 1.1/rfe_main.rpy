@@ -1,6 +1,7 @@
 init:
-    $ mods["rfe_menu"] = u"Готов ко всему. Github ver. v2. Мику."
-label rfe_menu:
+    $ mods["RFE__menu"] = u"Готов ко всему. Github ver. v2. Мику."
+    $ mod_tags["RFE__menu"] = ["gameplay:kinetic","length:days","protagonist:male","character:Семён","character:Лена","character:Славя","character:Алиса","character:Ульяна"]
+label RFE__menu:
     menu:
         "С начала":
             jump rfe_prologue
@@ -2435,11 +2436,12 @@ label end_text_rfe:
     "Автор оригинального фанфика – BivnjatkO. Модоадаптация, вычитка, отсебятина, фоны и исправление оригинального текста – tlsd (Lilly On The Bible). 80 процентов работы над следующей частью - Лена."
     window hide
     if persistent.mi_rfe_part1done == True:
-        jump rfe_menu
+        jump RFE__menu
     else:
         jump rfe_miku_prologue
 label rfe_miku_prologue:
     $ new_chapter(10, u"Готов на всё. Часть 10")
+    $ persistent.sprite_time = "day"
     scene bg kremlin_rfe with dissolve
     play music "sound/hover.ogg" fadein 2
     window show
