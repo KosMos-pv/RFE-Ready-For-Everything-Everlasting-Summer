@@ -273,7 +273,7 @@ label rfe_part2:
     "И каждый заход в чёрный провал заканчивался смертью одной из девушек, с которыми его свёл «Совенок». {w}Несчастные случаи, болезни с летальным исходом, убийства и самоубийства. Парню казалось, что он уже давно сошёл с ума, либо попал в персональный ад."
     "Раздавленный тяжким грузом обрушившихся на него событий он ушёл в запой (благо спирт в медпункте возобновлялся волшебным образом на следующий день) и перестал заходить в «разрывы». И тогда пришли кошмары…"
     play music music_list["pile"] fadein 1
-    scene bg epilogue_mi_2 with dissolve
+    scene bg epilogue_mi_4 with dissolve
     "Висящая в петле Лена, медленно вращающаяся вокруг оси. {w}Мутные белесые глаза ловят взгляд, с посиневших губ срывается хриплый шёпот:" 
     un "Почему ты не помог мне?"
     scene black with dissolve
@@ -2420,17 +2420,20 @@ label rfe_part9:
     "Семён почувствовал, как его веки резко потяжелели. Он попытался вскочить, но ноги уже не слушались. Последнее, что он увидел — это как Лена уткнулась носом в грудь Алисы, а та откинула назад голову и захрапела."
     "Ульяна же сползла щекой по стеклу, свернулась на сиденье калачиком и мирно засопела. Потом уснул и Семён."
     "ПРОДОЛЖЕНИЕ СЛЕДУЕТ… После титров. Честно."
+    $ rollcreditsagain_rfe = False
     jump end_text_rfe
 label end_text_rfe:
+    if rollcreditsagain_rfe == True:
+        play music "rfe/sound/cosmos.ogg" fadein 1
+        $ rollcreditsagain_rfe = False
     window hide
     scene bg black
     with dissolve2
     pause(1)
     show credits end_text_rfe:
-        xalign 0.5 
-        ypos 1.3
-        linear 67.0 ypos -1.3
-    $ renpy.pause(78, hard=True)
+        ypos 1300 xalign 0.5
+        linear 60 ypos -3000
+    $ renpy.pause(70, hard=True)
     scene black
     with dissolve2
     "Автор оригинального фанфика – BivnjatkO. Модоадаптация, вычитка, отсебятина, фоны и исправление оригинального текста – tlsd (Lilly On The Bible). 80 процентов работы над следующей частью - Лена."
@@ -3283,6 +3286,7 @@ label end_miku:
     "И музыку там же можете найти."
     menu:
         "Посмотреть ещё раз на тех, кто делал этот мод":
+            $ rollcreditsagain_rfe = True
             jump end_text_rfe
         "Сначала":
             jump rfe_miku_prologue

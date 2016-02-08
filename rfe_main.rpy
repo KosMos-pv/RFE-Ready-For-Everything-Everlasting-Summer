@@ -2421,6 +2421,9 @@ label rfe_part9:
     "ПРОДОЛЖЕНИЕ СЛЕДУЕТ… После титров. Честно."
     jump end_text_rfe
 label end_text_rfe:
+    if rollcreditsagain_rfe == True:
+        play music "rfe/sound/cosmos.ogg" fadein 1
+        $ rollcreditsagain_rfe = False
     window hide
     scene bg black
     with dissolve2
@@ -3282,6 +3285,7 @@ label end_miku:
     "И музыку там же можете найти."
     menu:
         "Посмотреть ещё раз на тех, кто делал этот мод":
+            $ rollcreditsagain_rfe = True
             jump end_text_rfe
         "Сначала":
             jump rfe_miku_prologue
