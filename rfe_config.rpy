@@ -17,6 +17,10 @@ init 2:
     $ bara = Character(u'Барабанщик', color="#40FF00", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ bas = Character(u'Басист', color="#40FF00", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ povar = Character(u'Повар', color="#40FF00", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ ded = Character(u'Старик', color="#40FF00", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ unlg_rfe = Character(u'Девушка', color="#6C9AC8", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ unl_rfe = Character(u'Алёна', color="#6C9AC8", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    
     #Все бг / цг фил фри ту юз с указанием хотя бы ссылочки на мод. Всё обрабатывал сам и заняло это достаточно времени. Только, прошу, делайте неконфликтные моды, добавляйте в конец xxx_навзаниемода, так будет проще и мне, и вам.
     image bg gym = "bg/gym.jpg"
     image bg gym2 = "bg/gym2.jpg"
