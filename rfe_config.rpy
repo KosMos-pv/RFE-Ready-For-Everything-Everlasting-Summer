@@ -21,6 +21,8 @@ init 2:
     $ unlg_rfe = Character(u'Девушка', color="#6C9AC8", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ unl_rfe = Character(u'Алёна', color="#6C9AC8", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ all_rfe = Character(u'Голоса', color="#ED4444", what_color="#E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ mihidden_rfe = Character(u'Голос', color="#3366CC", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+
     
     #Все бг / цг фил фри ту юз с указанием хотя бы ссылочки на мод. Всё обрабатывал сам и заняло это достаточно времени. Только, прошу, делайте неконфликтные моды, добавляйте в конец xxx_навзаниемода, так будет проще и мне, и вам.
     image bg gym = "bg/gym.jpg"
@@ -51,6 +53,10 @@ init 2:
     image bg clubstreet_rfe = "bg/street.jpg"
     image bg hotelroom1_rfe = "bg/hotelroom1.jpg"
     image bg hotelroom2_rfe = "bg/hotelroom2.jpg"
+    image bg tokyonight_rfe = "bg/tokyonight.jpg"
+    image bg akishelter_rfe = "bg/akishelter.jpg"
+    image bg notebooknight_rfe = "bg/notebooknight.jpg"
+    image bg roofmi_rfe = "bg/build2.jpg"
     # И спрайты можете забирать с тем же условием. Создавайте новые имена! Не надо использовать coat/coattie. Такая схема подключения работает на 1.2.
     image dv smile coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_smile.png"), im.matrix.tint(0.83, 0.88, 0.92) )
     image dv normal coattie = im.MatrixColor( im.Composite((900,1080), (0,0), "images/sprites/normal/dv/dv_4_body.png",(0,0), "sprites/dv_4_coattie.png",(0,0), "images/sprites/normal/dv/dv_4_normal.png"), im.matrix.tint(0.83, 0.88, 0.92) )
